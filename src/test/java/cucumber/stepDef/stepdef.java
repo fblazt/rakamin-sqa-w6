@@ -12,7 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class login {
+public class stepdef {
     WebDriver driver;
     String baseUrl = "https://saucedemo.com";
 

@@ -10,5 +10,5 @@ import org.junit.runner.RunWith;
         glue = "cucumber/stepDef",
         plugin = {"html:target/HTML_report.html"}
 )
-public class runLogin {
+public class run {
 }
