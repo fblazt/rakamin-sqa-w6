@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class Login {
     @Test
     public void success_login() {
@@ -15,6 +17,7 @@ public class Login {
 
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         driver.get(baseUrl);
 
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
